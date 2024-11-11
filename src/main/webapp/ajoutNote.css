@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f4f4; /* Couleur de fond douce */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+.background-image {
+    position: fixed; /* Fixer l'image d'arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvrir toute la zone sans déformation */
+    z-index: -1; /* Envoyer l'image en arrière-plan */
+}
+
+.menu-bar {
+    background: #4CAF50; /* Couleur de la barre de menu */
+    padding: 15px;
+    text-align: center;
+    color: white; /* Couleur du texte de la barre de menu */
+    font-size: 24px; /* Taille du texte */
+}
+
+.menu-options {
+    text-align: center; /* Centrer les options du menu */
+    margin: 20px 0;
+}
+
+.btn {
+    background: #008CBA; /* Couleur des boutons */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background 0.3s; /* Animation pour l'effet hover */
+}
+
+.btn:hover {
+    background: #005f75; /* Couleur du bouton au survol */
+}
+
+.form-container {
+    background: white; /* Fond blanc pour le conteneur du formulaire */
+    padding: 30px;
+    margin: 40px auto; /* Centrer le conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    max-width: 600px; /* Largeur maximale du conteneur */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50; /* Couleur du titre */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px; /* Espacement autour des étiquettes */
+    font-weight: bold; /* Gras pour les étiquettes */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Largeur pleine */
+    padding: 10px;
+    margin: 5px 0 20px; /* Espacement autour des champs */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    transition: border 0.3s; /* Animation pour le focus */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border: 1px solid #4CAF50; /* Bordure verte au focus */
+    outline: none; /* Supprimer l'outline par défaut */
+}
+
+.btn-submit {
+    background: #4CAF50; /* Couleur du bouton d'envoi */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background 0.3s; /* Animation pour l'effet hover */
+    width: 100%; /* Largeur pleine pour le bouton */
+    font-size: 18px; /* Taille du texte du bouton */
+}
+.btn-submitRetour {
+    background: #4CAF50; /* Couleur du bouton d'envoi */
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background 0.3s; /* Animation pour l'effet hover */
+    width: 25%; /* Largeur pleine pour le bouton */
+    font-size: 15px; /* Taille du texte du bouton */
+}
+
+.btn-submit:hover {
+    background: #45a049; /* Couleur du bouton d'envoi au survol */
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Masquer le bouton au départ */
+    background: #4CAF50; /* Couleur du bouton de défilement */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    font-size: 16px; /* Taille du texte */
+}
+
+.scroll-button.show {
+    display: block; /* Afficher le bouton lors du défilement */
+}
